@@ -1,0 +1,20 @@
+note over browser:
+browser executes the event handler
+that adding a new note into notes array
+and re-renders notes to display
+end note
+
+note over browser:
+browser also send POST request to the server
+that update the notes on the server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201 Created
+
+note over browser:
+browser get response from server
+with 201 status code.
+It means the note is succesfully
+added on the server
+end note
