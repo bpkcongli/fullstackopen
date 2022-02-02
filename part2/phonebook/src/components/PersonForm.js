@@ -1,15 +1,15 @@
 import React from 'react';
 
 const PersonForm = (props) => {
-  const {nameHandler, numberHandler, addPersonHandler} = props;
+  const {name, number, nameHandler, numberHandler, addPersonHandler} = props;
 
   return (
     <form>
       <div>
-        name:<input type="text" onChange={nameHandler} />
+        name:<input type="text" value={name} onChange={nameHandler} />
       </div>
       <div>
-        number:<input type="text" onChange={numberHandler} />
+        number:<input type="text" value={number} onChange={numberHandler} />
       </div>
       <div>
         <button type="submit" onClick={addPersonHandler}>add</button>
